@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DinerMax3000.Business;
+using DinerMax3000.Business.dsDinerMax3000TableAdapters;
+
 
 namespace DinerMax3000Console
 {
@@ -10,32 +13,22 @@ namespace DinerMax3000Console
     {
         static void Main(string[] args)
         {
-            FoodMenu summerMenu = new FoodMenu();
-            summerMenu.Name = "Summer menu";
-            summerMenu.AddMenuItem("Salmon", "Norwegian fresh salmon with butter", 25.50);
-            summerMenu.AddMenuItem("Taco", "Spicy meat with cheese", 15.00);
-            summerMenu.HospitalDirection = "Right around the corner at 5th street";
+            List<Menu> menusFromDatabase = Menu.GetAllMenus();
+            Menu firstMenu = menusFromDatabase[0];
 
-            DrinkMenu outsideDrinks = new DrinkMenu();
-            outsideDrinks.Disclaimer = "Dont drink and drive";
-            try
-            {
-                outsideDrinks.AddMenuItem("Cube Libre", "A classic", 5.00);
-                outsideDrinks.AddMenuItem("Pepsi", "Control yourself", 3.50);
-                outsideDrinks.AddMenuItem("Pepsi", "Control yourself", -3.50);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
-
+            //firstMenu.SaveNewMenuItem("Lasanga", "Perfect if you are cold and hungry", 18);
+            //menusFromDatabase = Menu.GetAllMenus();
+                        
             Order hungryGuest = new Order();
-            foreach (var item in summerMenu.items)
-            {
-                hungryGuest.items.Add(item);
-            }
 
+            foreach (var currentMenu in menusFromDatabase)
+            {
+                foreach (var currentMenuItem in currentMenu.items)
+                {
+                    hungryGuest.items.Add(currentMenuItem);
+                }
+            }
+            
             Console.WriteLine("Total price is: " + hungryGuest.Total);
 
             Console.ReadKey();
