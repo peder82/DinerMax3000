@@ -1,0 +1,1 @@
+Only a test project according to Pluralsight to see more parts of .Net platform. 
