@@ -7,6 +7,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinerMax3000Console", "Dine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinerMax3000BusinessLayer", "DinerMax3000BusinessLayer\DinerMax3000BusinessLayer.csproj", "{57678191-84A7-4988-B98D-E3D9914B13F6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E11FE2DB-49E7-4EB8-AC4E-FE8DCDCF8236}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinerMax3000WpfClient", "DinerMax3000WpfClient\DinerMax3000WpfClient.csproj", "{83A002C6-C70F-4AA1-B62B-C9D741B0BD30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinerMax3000Web", "DinerMax3000Web\DinerMax3000Web.csproj", "{797E4798-696A-4D56-A18F-914D89CC60DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +30,14 @@ Global
 		{57678191-84A7-4988-B98D-E3D9914B13F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57678191-84A7-4988-B98D-E3D9914B13F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57678191-84A7-4988-B98D-E3D9914B13F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83A002C6-C70F-4AA1-B62B-C9D741B0BD30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A002C6-C70F-4AA1-B62B-C9D741B0BD30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A002C6-C70F-4AA1-B62B-C9D741B0BD30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A002C6-C70F-4AA1-B62B-C9D741B0BD30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{797E4798-696A-4D56-A18F-914D89CC60DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{797E4798-696A-4D56-A18F-914D89CC60DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{797E4798-696A-4D56-A18F-914D89CC60DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{797E4798-696A-4D56-A18F-914D89CC60DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
